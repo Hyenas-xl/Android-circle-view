@@ -1,29 +1,30 @@
-CircleView
+[CircleView][1]
 =========
-#À©Õ¹Á½¸öÊôĞÔ£º
+#æ‰©å±•ä¸¤ä¸ªå±æ€§ï¼š
     <attr name="circle_radius" format="dimension"/>
     <attr name="circle_border_width" format="dimension"/>
     
-#Ê¹ÓÃÊ±
-##ÅäÖÃ
+#ä½¿ç”¨æ—¶
+##é…ç½®
     <hyenas.xl.circleview.CircleView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="6"
         android:background="@drawable/index_background"
-        app:circle_radius="70dp"                //Ô²°ë¾¶
-        app:circle_border_width="10dp"          //Ô²¿í¶È
+        app:circle_radius="70dp"                //åœ†åŠå¾„
+        app:circle_border_width="10dp"          //åœ†å®½åº¦
         android:id="@+id/circle_view"/>
         
     
-##Êı¾İ
+##æ•°æ®
     CircleView circleView = (CircleView) findViewById(R.id.circle_view);
-    circleView.setWeatherText("¶àÔÆ ¿ÕÆøÖÊÁ¿Á¼");
-    circleView.setViewTitle("½ñÈÕ»î¶¯");
+    circleView.setWeatherText("å¤šäº‘ ç©ºæ°”è´¨é‡è‰¯");
+    circleView.setViewTitle("ä»Šæ—¥æ´»åŠ¨");
     TextValueObject [] textValueObjects = new TextValueObject[]{
-            new TextValueObject("µ±Ç°×Ü²½Êı",false), new TextValueObject("11157",true) , new TextValueObject("7¹«Àï | 300Ç§¿¨",false)};
-    circleView.setCenterTextValueObjects(textValueObjects);         //Ô²È¦ÖĞ¼äÎÄ±¾
-    circleView.setProgressValue(40);        //½ø¶È ÊµÏÖ¶¯Ì¬¼ÓÔØ
+            new TextValueObject("å½“å‰æ€»æ­¥æ•°",false), new TextValueObject("11157",true) , new TextValueObject("7å…¬é‡Œ | 300åƒå¡",false)};
+    circleView.setCenterTextValueObjects(textValueObjects);         //åœ†åœˆä¸­é—´æ–‡æœ¬
+    circleView.setProgressValue(40);        //è¿›åº¦ å®ç°åŠ¨æ€åŠ è½½
     
-#Ğ§¹û
+#æ•ˆæœ
 ![image](https://github.com/Hyenas-xl/Android-circle-view/raw/master/icon/view.png)
+[1]:https://github.com/Hyenas-xl/Android-circle-view
